@@ -1,26 +1,43 @@
-import React, { Component } from "react";
-
+import React, { Component } from 'react';
 
 export default class Login extends Component {
     render() {
         return (
             <form>
                 <h3>Log In</h3>
-                
+
                 <div className="form-group">
-                    <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <label htmlFor="emailInput">Email address
+                        <input
+                            id="emailInput"
+                            type="email"
+                            className="form-control"
+                            placeholder="Enter email"
+                        />
+                    </label>
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <label htmlFor="passwordInput">Password
+                        <input
+                            id="passwordInput"
+                            type="password"
+                            className="form-control"
+                            placeholder="Enter password"
+                        />
+                    </label>
                 </div>
 
                 <div className="form-group">
                     <div className="custom-control custom-checkbox">
-                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                        <label className="custom-control-label" htmlFor="customCheck1">
+                            <input
+                                type="checkbox"
+                                className="custom-control-input"
+                                id="customCheck1"
+                            />
+                            Remember me
+                        </label>
                     </div>
                 </div>
 
