@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export default class SignUp extends Component {
     render() {
@@ -7,23 +7,33 @@ export default class SignUp extends Component {
                 <h3>Sign Up</h3>
 
                 <div className="form-group">
-                    <label>First name</label>
-                    <input type="text" className="form-control" placeholder="First name" />
+                    <label htmlFor="firstNameInput">First name
+                        <input
+                            id="firstNameInput"
+                            type="text"
+                            className="form-control"
+                            placeholder="First name"
+                        />
+                    </label>
+
                 </div>
 
                 <div className="form-group">
-                    <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Last name" />
+                    <label htmlFor="lastNameInput">Last className
+                        <input id="lastNameInput" type="text" className="form-control" placeholder="Last name" />
+                    </label>
                 </div>
 
                 <div className="form-group">
-                    <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <label htmlFor="emailInput">Email address
+                        <input id="emailInput" type="email" className="form-control" placeholder="Enter email" />
+                    </label>
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <label htmlFor="passwordInput">Password
+                        <input id="passwordInput" type="password" className="form-control" placeholder="Enter password" />
+                    </label>
                 </div>
 
                 <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
