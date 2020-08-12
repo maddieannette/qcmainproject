@@ -13,8 +13,8 @@ export default class Login extends Component {
                             type="email"
                             className="form-control"
                             placeholder="Enter email"
-                        />
-                    </label>
+                            />
+                        </label>
                 </div>
 
                 <div className="form-group">
