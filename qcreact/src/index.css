@@ -12,7 +12,8 @@ code {
     monospace;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+/* @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
   box-sizing: border-box;
@@ -22,7 +23,7 @@ body {
   min-height: 100vh;
   display: flex;
   font-weight: 400;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6,label,span {
@@ -37,10 +38,11 @@ body, html, .App, #root, .auth-wrapper {
 }
 
 
-.navbar-light {
-  background-color: #90b4ce;
+.navbar-light { 
+  /* background-color: #24252a; */
   box-shadow: 0px 14px 80px rgba(42, 44, 70, 0.2);
   font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 
 }
 

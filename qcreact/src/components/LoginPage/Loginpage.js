@@ -7,14 +7,15 @@ export default class Login extends Component {
                 <h3>Log In</h3>
 
                 <div className="form-group">
-                    <label htmlFor="emailInput">Email address
+                    <label htmlFor="userInput">Username
                         <input
-                            id="emailInput"
-                            type="email"
+                            id="userInput"
+                            type="username"
                             className="form-control"
-                            placeholder="Enter email"
-                            />
-                        </label>
+                            placeholder="Enter username"
+                            required
+                        />
+                    </label>
                 </div>
 
                 <div className="form-group">
@@ -24,6 +25,7 @@ export default class Login extends Component {
                             type="password"
                             className="form-control"
                             placeholder="Enter password"
+                            required
                         />
                     </label>
                 </div>
@@ -42,9 +44,6 @@ export default class Login extends Component {
                 </div>
 
                 <button type="submit" className="btn btn-primary btn-block">Submit</button>
-                <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
-                </p>
             </form>
         );
     }
