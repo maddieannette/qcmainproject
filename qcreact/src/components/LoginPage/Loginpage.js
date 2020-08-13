@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 
 export default class Login extends Component {
+    submitForm(e) {
+        e.preventDefault();
+        this.props.history.push('./DashBoard.js');
+    }
+
     render() {
         return (
-            <form>
+            <form onSubmit={this.submitForm.bind(this)}>
                 <h3>Log In</h3>
 
                 <div className="form-group">
