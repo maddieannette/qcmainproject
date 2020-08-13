@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import Login from './components/LoginPage/LoginPage';
 import SignUp from './components/Signup/Signup';
+import DashBoard from './components/DashBoard/DashBoard';
 
 function App() {
     return (
@@ -31,15 +32,16 @@ function App() {
                     </nav>
 
                     <div className="auth-wrapper">
-                        <div className="auth-inner">
-                            <Switch>
-                                <Route exact path="/" component={Login} />
-                                <Route path="/sign-in" component={Login} />
-                                <Route path="/sign-up" component={SignUp} />
-                            </Switch>
-                        </div>
+                        {/* <div className="auth-inner"> */}
+                        <Switch>
+                            <Route exact path="/" component={Login} />
+                            <Route path="/sign-in" component={Login} />
+                            <Route path="/sign-up" component={SignUp} />
+                            <Route path="/dashboard" component={DashBoard} />
+                        </Switch>
                     </div>
                 </div>
+                {/* </div> */}
             </Router>
         </Provider>
     );

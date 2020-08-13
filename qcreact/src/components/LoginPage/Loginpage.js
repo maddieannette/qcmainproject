@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 export default class Login extends Component {
     submitForm(e) {
         e.preventDefault();
-        this.props.history.push('./DashBoard.js');
+        this.props.history.push('./DashBoard');
     }
 
     render() {
         return (
-            <form onSubmit={this.submitForm.bind(this)}>
+            <form onSubmit={this.submitForm.bind(this)} className="auth-inner">
                 <h3>Log In</h3>
 
                 <div className="form-group">

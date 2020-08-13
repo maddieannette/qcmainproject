@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class SignUp extends Component {
     render() {
         return (
-            <form>
+            <form className="auth-inner">
                 <h3>Sign Up</h3>
 
                 <div className="form-group">
