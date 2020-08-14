@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Login extends Component {
+class Login extends Component {
     submitForm(e) {
         e.preventDefault();
         this.props.history.push('./DashBoard');
@@ -53,3 +53,5 @@ export default class Login extends Component {
         );
     }
 }
+
+export default Login;
