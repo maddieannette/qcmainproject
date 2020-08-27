@@ -199,12 +199,6 @@ export default function PersistentDrawerLeft() {
                 })}
             >
                 <div className={classes.drawerHeader} />
-                <FormDept />
-                <br />
-                <AddNew />
-                <Typography paragraph>
-                    HERE WE WILL DESIGN DASHBOARD.
-                </Typography>
             </main>
         </div>
     );

@@ -10,13 +10,14 @@ import Login from './components/LoginPage/LoginPage';
 import SignUp from './components/Signup/Signup';
 import DashBoard from './components/DashBoard/DashBoard';
 import DailyForm from './components/Form/DailyForm';
+import SideBarNav from './components/DashBoard/SideBarNav';
 
 function App() {
     return (
         <Provider store={store}>
             <Router>
                 <div className="App">
-                    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+                    {/* <nav className="navbar navbar-expand-lg navbar-light fixed-top">
                         <div className="container">
                             <Link className="navbar-brand" to="/sign-in">Health Front QC</Link>
                             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -30,7 +31,7 @@ function App() {
                                 </ul>
                             </div>
                         </div>
-                    </nav>
+                    </nav> */}
 
                     <div className="auth-wrapper">
                         {/* <div className="auth-inner"> */}
@@ -40,6 +41,7 @@ function App() {
                             <Route path="/sign-up" component={SignUp} />
                             <Route path="/dashboard" component={DashBoard} />
                             <Route path="/dailyform" component={DailyForm} />
+                            <Route path="/sidebarnav" component={SideBarNav} />
                         </Switch>
                     </div>
                 </div>
