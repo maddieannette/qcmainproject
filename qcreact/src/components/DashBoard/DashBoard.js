@@ -23,6 +23,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import DailyForm from './FormDept';
 import AddNew from './AddNew';
+import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -96,6 +97,10 @@ export default function PersistentDrawerLeft() {
         setOpen(false);
     };
 
+    function ListItemLink(props) {
+        return <ListItem button to='/DailyForm' />;
+    }
+
     return (
         // This section is the top headerbar
         <div className={classes.root}>
@@ -168,19 +173,25 @@ export default function PersistentDrawerLeft() {
                 </div>
                 <Divider />
                 <List component="nav" aria-label="main mailbox folders">
-        <ListItem button >
-          <ListItemIcon>
-            <InboxIcon />
-          </ListItemIcon>
-          <ListItemText primary="Inbox" />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <InboxIcon />
-          </ListItemIcon>
-          <ListItemText primary="Drafts" />
-        </ListItem>
-      </List>
+                <ListItem button component={Link} to="/Dashboard">
+                        <ListItemIcon>
+                            <InboxIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Dashboard" />
+                    </ListItem>
+                    <ListItem button component={Link} to="/DailyForm">
+                        <ListItemIcon>
+                            <InboxIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Daily Form" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <InboxIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Add New" />
+                    </ListItem>
+                </List>
             </Drawer>
             <main
                 className={(classes.content, {

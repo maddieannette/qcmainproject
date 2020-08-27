@@ -9,6 +9,7 @@ import store from './store';
 import Login from './components/LoginPage/LoginPage';
 import SignUp from './components/Signup/Signup';
 import DashBoard from './components/DashBoard/DashBoard';
+import DailyForm from './components/Form/DailyForm';
 
 function App() {
     return (
@@ -38,6 +39,7 @@ function App() {
                             <Route path="/sign-in" component={Login} />
                             <Route path="/sign-up" component={SignUp} />
                             <Route path="/dashboard" component={DashBoard} />
+                            <Route path="/dailyform" component={DailyForm} />
                         </Switch>
                     </div>
                 </div>
