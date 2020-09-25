@@ -93,12 +93,16 @@ export default function Login() {
               variant="contained"
               color="primary"
               className={classes.submit}
+              href="/dashboard"
             >
-              Lo
+              Login
             </Button>
+            {/* <Link href="/dashboard" variant="body2">
+                  Login
+                </Link> */}
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
+                <Link href="" variant="body2">
                   Forgot password?
                 </Link>
               </Grid>
