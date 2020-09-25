@@ -14,6 +14,7 @@ import Slider from '@material-ui/core/Slider';
 import Input from '@material-ui/core/Input';
 import VolumeUp from '@material-ui/icons/VolumeUp';
 import { makeStyles } from '@material-ui/core/styles';
+import { Box } from '@material-ui/core';
 
 
 const marks = [
@@ -102,6 +103,7 @@ export default function DailyForm() {
     return (
         <React.Fragment>
             <SideBarNav />
+            <Box p={5}>
             <Typography variant="h4" gutterBottom >
                 Daily Form
       </Typography>
@@ -235,6 +237,7 @@ export default function DailyForm() {
                     />
                 </Grid>
             </Grid>
+            </Box>
         </React.Fragment>
     );
 }
